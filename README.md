@@ -20,7 +20,7 @@ limitations under the License.
 
 # untilAsync
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Invoke a function until a test condition is true.
 
@@ -253,10 +253,10 @@ untilAsync( predicate, fcn, done );
 
 ## See Also
 
--   [`@stdlib/utils/async/do-until`][@stdlib/utils/async/do-until]: invoke a function until a test condition is true.
--   [`@stdlib/utils/async/do-while`][@stdlib/utils/async/do-while]: invoke a function while a test condition is true.
--   [`@stdlib/utils/until`][@stdlib/utils/until]: invoke a function until a test condition is true.
--   [`@stdlib/utils/async/while`][@stdlib/utils/async/while]: invoke a function while a test condition is true.
+-   <span class="package-name">[`@stdlib/utils/async/do-until`][@stdlib/utils/async/do-until]</span><span class="delimiter">: </span><span class="description">invoke a function until a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils/async/do-while`][@stdlib/utils/async/do-while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils/until`][@stdlib/utils/until]</span><span class="delimiter">: </span><span class="description">invoke a function until a test condition is true.</span>
+-   <span class="package-name">[`@stdlib/utils/async/while`][@stdlib/utils/async/while]</span><span class="delimiter">: </span><span class="description">invoke a function while a test condition is true.</span>
 
 </section>
 
@@ -307,8 +307,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-async-until/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/utils-async-until?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/utils-async-until.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/utils-async-until/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
