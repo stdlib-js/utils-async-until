@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import untilAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-until@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-async-until/tags). For example,
+
+```javascript
 import untilAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-until@v0.2.0-esm/index.mjs';
 ```
 
@@ -215,7 +220,7 @@ function done( error ) {
 <script type="module">
 
 import repeatString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-repeat@esm/index.mjs';
-import untilAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-until@v0.2.0-esm/index.mjs';
+import untilAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-until@esm/index.mjs';
 
 function predicate( i, clbk ) {
     setTimeout( onTimeout, 0 );
