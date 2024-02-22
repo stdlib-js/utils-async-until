@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import untilAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-until@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-async-until/tags). For example,
+
+```javascript
 import untilAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-until@v0.2.1-deno/mod.js';
 ```
 
@@ -210,7 +215,7 @@ function done( error ) {
 
 ```javascript
 import repeatString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-repeat@deno/mod.js';
-import untilAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-until@v0.2.1-deno/mod.js';
+import untilAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-until@deno/mod.js';
 
 function predicate( i, clbk ) {
     setTimeout( onTimeout, 0 );
