@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-async-until
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import untilAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-until@esm/index.mjs';
+var untilAsync = require( '@stdlib/utils-async-until' );
 ```
 
 #### untilAsync( predicate, fcn, done\[, thisArg ] )
@@ -90,20 +108,20 @@ untilAsync( predicate, fcn, done );
 
 The `predicate` function is provided two arguments:
 
--   `i`: iteration number (starting from zero)
--   `clbk`: a callback indicating whether to invoke `fcn`
+-   `i`: iteration number (starting from zero).
+-   `clbk`: a callback indicating whether to invoke `fcn`.
 
 The `clbk` function accepts two arguments:
 
--   `error`: error object
--   `bool`: test result
+-   `error`: error object.
+-   `bool`: test result.
 
 If the test result is falsy, the function invokes `fcn`; otherwise, the function invokes the `done` callback.
 
 The function to invoke is provided two arguments:
 
--   `i`: iteration number (starting from zero)
--   `next`: a callback which must be invoked before proceeding to the next iteration
+-   `i`: iteration number (starting from zero).
+-   `next`: a callback which must be invoked before proceeding to the next iteration.
 
 The first argument of both `clbk` and `next` is an `error` argument. If either function is called with a truthy `error` argument, the function suspends execution and immediately calls the `done` callback for subsequent `error` handling.
 
@@ -208,14 +226,9 @@ function done( error ) {
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import repeatString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-repeat@esm/index.mjs';
-import untilAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-until@esm/index.mjs';
+```javascript
+var repeatString = require( '@stdlib/string-repeat' );
+var untilAsync = require( '@stdlib/utils-async-until' );
 
 function predicate( i, clbk ) {
     setTimeout( onTimeout, 0 );
@@ -239,10 +252,6 @@ function done( error, result ) {
 }
 
 untilAsync( predicate, fcn, done );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -283,7 +292,7 @@ untilAsync( predicate, fcn, done );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -300,7 +309,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -348,13 +357,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/async/do-until]: https://github.com/stdlib-js/utils-async-do-until/tree/esm
+[@stdlib/utils/async/do-until]: https://github.com/stdlib-js/utils-async-do-until
 
-[@stdlib/utils/async/do-while]: https://github.com/stdlib-js/utils-async-do-while/tree/esm
+[@stdlib/utils/async/do-while]: https://github.com/stdlib-js/utils-async-do-while
 
-[@stdlib/utils/until]: https://github.com/stdlib-js/utils-until/tree/esm
+[@stdlib/utils/until]: https://github.com/stdlib-js/utils-until
 
-[@stdlib/utils/async/while]: https://github.com/stdlib-js/utils-async-while/tree/esm
+[@stdlib/utils/async/while]: https://github.com/stdlib-js/utils-async-while
 
 <!-- </related-links> -->
 
